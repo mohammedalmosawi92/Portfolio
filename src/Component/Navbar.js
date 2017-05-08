@@ -5,7 +5,7 @@ class Navbar extends React.Component {
         let liLinks = this.props.link.map((item) => {
             return (
                 <li className="navbar-side">
-                    <a href="#/about" className="routes">{item}</a>
+                    <a href="#" className="routes">{item}</a>
                 </li>
             )
         })
@@ -18,8 +18,8 @@ class Navbar extends React.Component {
                         </button>
                         <div className="navbar-header">
                             <div className="navbar-brand">
-                                <header>
-                                    <a href="#/">{this.props.brand}</a>
+                                <header title="Mohammed Aziz Jawad">
+                                    <a href="#">{this.props.brand}</a>
                                 </header>
                             </div>
                         </div>
