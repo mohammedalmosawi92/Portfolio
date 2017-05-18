@@ -6,6 +6,7 @@ import Background from "./Containers/Background";
 import Bio from "./Containers/bio";
 import Skills from "./Containers/skills";
 import Separator from "./Containers/separator";
+import Footer from "./Component/footer";
 
 class App extends React.Component {
     render() {
@@ -16,6 +17,7 @@ class App extends React.Component {
                 <Separator></Separator>
                 <Skills></Skills>
                 <Separator></Separator>
+                <Footer></Footer>
             </div>
         )
     }

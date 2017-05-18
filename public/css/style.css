@@ -1,3 +1,10 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+}
+
 body {
     font-family: 'Ubuntu', sans-serif;
     font-family: 'Exo', sans-serif;
@@ -24,13 +31,15 @@ header {
     margin-top: 15px;
 }
 header a {
-    color: white;
+    color: rgb(255, 87, 34);
     font-size: 30px;
     margin-left: 60px;
     border: 3px solid white;
     padding: 8px 12px;
     text-decoration: none !important;
+    background: white;
     font-weight: 900;
+    transition: all 0.5s linear;
 }
 
 .navbar-collapse,
@@ -38,15 +47,6 @@ header a {
 .navbar-form {
     border: 0px solid transparent;
     width: 100% !important;
-}
-.glyphicon-align-justify {
-    color: white !important;
-}
-.glyphicon-align-justify:haver {
-    background: white !important;
-}
-.glyphicon-align-justify:focus {
-    background: white !important;
 }
 .navbar-collapse ul li {
     border: 5px solid transparent
@@ -61,6 +61,9 @@ header a {
 header a:hover,
 header a:active {
     color: white;
+    background: rgb(255, 87, 34);
+    border: 3px solid white;
+    transition: all 0.5s linear;
 }
 
 .routes {
@@ -133,18 +136,45 @@ header a:active {
 .aboutMy {
     font-size: 20px;
 }
-
-.first-paragraph {}
-
-.second-paragraph {}
-
-.third-paragraph {}
-
 .background-comp {
     margin-bottom: 50px;
 }
 
-.bio-comp {}
+.navbar-toggle {
+    color: white;
+}
+.navbar-toggle:hover {
+    color: rgb(255, 87, 34);
+    background: white !important;
+}
+.navbar-toggle:focus {
+    color: rgb(255, 87, 34);
+    background: white !important;
+}
+
+.copyright {
+    font-size: 30px;
+    color: white;
+}
+.social-media i{
+    font-size: 30px;
+    color: white !important;
+    padding-top: 8px;
+}
+
+footer {
+    background: rgb(255, 87, 34);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
 
 @media (max-width: 768px) {
     header a {
@@ -156,6 +186,7 @@ header a:active {
     .navbar-collapse {
         position: absolute;
         z-index: 100;
+        margin-top: 20px;
     }
     .navbar-collapse ul li a{
         background: white !important;
@@ -169,3 +200,4 @@ header a:active {
         color: white !important;
     }
 }
+

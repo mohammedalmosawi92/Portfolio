@@ -20968,6 +20968,103 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var Footer = function (_React$Component) {
+    _inherits(Footer, _React$Component);
+
+    function Footer() {
+        _classCallCheck(this, Footer);
+
+        return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
+    }
+
+    _createClass(Footer, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "div",
+                null,
+                _react2.default.createElement(
+                    "footer",
+                    { className: "container-full" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "row" },
+                        _react2.default.createElement(
+                            "div",
+                            { className: "col-sm-6" },
+                            _react2.default.createElement(
+                                "div",
+                                { className: "copyright" },
+                                "Mohammed Aziz Jawad"
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            { className: "col-sm-6" },
+                            _react2.default.createElement(
+                                "div",
+                                { className: "social-media text-right" },
+                                _react2.default.createElement(
+                                    "li",
+                                    null,
+                                    _react2.default.createElement(
+                                        "a",
+                                        { href: "https://twitter.com/Mohammedazeez92", target: "_blank" },
+                                        _react2.default.createElement("i", { className: "fa fa-twitter", "aria-hidden": "true" })
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    "li",
+                                    null,
+                                    _react2.default.createElement(
+                                        "a",
+                                        { href: "https://www.facebook.com/mohammedalmosawi92/", target: "_blank" },
+                                        _react2.default.createElement("i", { className: "fa fa-facebook-official", "aria-hidden": "true" })
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    "li",
+                                    null,
+                                    _react2.default.createElement(
+                                        "a",
+                                        { href: "https://www.instagram.com/mohammedalmosawi92/", target: "_blank" },
+                                        _react2.default.createElement("i", { className: "fa fa-instagram", "aria-hidden": "true" })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Footer;
+}(_react2.default.Component);
+
+exports.default = Footer;
+
+},{"react":181}],185:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 var Myphoto = function (_React$Component) {
     _inherits(Myphoto, _React$Component);
 
@@ -21005,7 +21102,7 @@ var Myphoto = function (_React$Component) {
 
 exports.default = Myphoto;
 
-},{"react":181}],185:[function(require,module,exports){
+},{"react":181}],186:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21139,7 +21236,7 @@ var MySkills = function (_React$Component) {
 
 exports.default = MySkills;
 
-},{"react":181}],186:[function(require,module,exports){
+},{"react":181}],187:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21214,7 +21311,7 @@ var Owner = function (_React$Component) {
 
 exports.default = Owner;
 
-},{"react":181}],187:[function(require,module,exports){
+},{"react":181}],188:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21287,7 +21384,7 @@ var Background = function (_React$Component) {
 
 exports.default = Background;
 
-},{"../Component/Navbar.js":182,"../Component/myphoto.js":184,"../Component/websiteOwner.js":186,"react":181}],188:[function(require,module,exports){
+},{"../Component/Navbar.js":182,"../Component/myphoto.js":185,"../Component/websiteOwner.js":187,"react":181}],189:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21340,7 +21437,7 @@ var Bio = function (_React$Component) {
 
 exports.default = Bio;
 
-},{"../Component/description.js":183,"react":181}],189:[function(require,module,exports){
+},{"../Component/description.js":183,"react":181}],190:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21378,15 +21475,11 @@ var Separator = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                     "div",
-                    { className: "container" },
+                    { className: "row" },
                     _react2.default.createElement(
                         "div",
-                        { className: "row" },
-                        _react2.default.createElement(
-                            "div",
-                            { className: "col-xs-4 col-xs-offset-4" },
-                            _react2.default.createElement("div", { className: "separator" })
-                        )
+                        { className: "col-xs-4 col-xs-offset-4" },
+                        _react2.default.createElement("div", { className: "separator" })
                     )
                 )
             );
@@ -21398,7 +21491,7 @@ var Separator = function (_React$Component) {
 
 exports.default = Separator;
 
-},{"react":181}],190:[function(require,module,exports){
+},{"react":181}],191:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21451,7 +21544,7 @@ var Skills = function (_React$Component) {
 
 exports.default = Skills;
 
-},{"../Component/myskills.js":185,"react":181}],191:[function(require,module,exports){
+},{"../Component/myskills.js":186,"react":181}],192:[function(require,module,exports){
 "use strict";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -21479,6 +21572,10 @@ var _skills2 = _interopRequireDefault(_skills);
 var _separator = require("./Containers/separator");
 
 var _separator2 = _interopRequireDefault(_separator);
+
+var _footer = require("./Component/footer");
+
+var _footer2 = _interopRequireDefault(_footer);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21510,7 +21607,8 @@ var App = function (_React$Component) {
                 _react2.default.createElement(_bio2.default, { className: "bio-comp" }),
                 _react2.default.createElement(_separator2.default, null),
                 _react2.default.createElement(_skills2.default, null),
-                _react2.default.createElement(_separator2.default, null)
+                _react2.default.createElement(_separator2.default, null),
+                _react2.default.createElement(_footer2.default, null)
             );
         }
     }]);
@@ -21520,4 +21618,4 @@ var App = function (_React$Component) {
 
 _reactDom2.default.render(_react2.default.createElement(App, null), document.querySelector(".app"));
 
-},{"./Containers/Background":187,"./Containers/bio":188,"./Containers/separator":189,"./Containers/skills":190,"react":181,"react-dom":30}]},{},[191]);
+},{"./Component/footer":184,"./Containers/Background":188,"./Containers/bio":189,"./Containers/separator":190,"./Containers/skills":191,"react":181,"react-dom":30}]},{},[192]);
