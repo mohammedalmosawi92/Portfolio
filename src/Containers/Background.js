@@ -14,7 +14,7 @@ class Background extends React.Component {
                 <div className="img-div">
                     <div className="wrapper">
                         <Navbar brand="M.A.J" link={link}></Navbar>
-                        <Owner></Owner>
+                        <Owner {...this.props}></Owner>
                         <Myphoto photo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPUqanmZbaleuXKMoTtkBrxIT-YutFDnQRU-OH5AWVdDqiJaeG5g"></Myphoto>
                     </div>
                 </div>

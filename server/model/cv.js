@@ -5,7 +5,9 @@ var cvSchema = new Schema({
     name: String,
     job: String,
     bio: String,
-    skills: String
+    languages: [String],
+    frameworks: [String],
+    databases: [String]
 })
 
 module.exports = mongoose.model("CVSchema", cvSchema);

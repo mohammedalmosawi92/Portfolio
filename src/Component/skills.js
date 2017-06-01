@@ -1,9 +1,22 @@
 import React from "react";
 
-//import Components
-
 class MySkills extends React.Component {
     render() {
+        let lang = [];
+        if(this.props.cv.languages !== undefined) {
+            lang = this.props.cv.languages.map((item, index) => {
+                if(index !== this.props.cv.languages.length - 1) {
+                    return (
+                        <span> {item},</span>
+                  )
+                }else {
+                    return (
+                        <span> {item}.</span>
+                    )
+                }
+            })
+        }
+  
         return (
             <div className="container">
                 <div className="row text-center">
@@ -20,7 +33,7 @@ class MySkills extends React.Component {
                                 <h2>Languages</h2>
                             </div>
                             <div className="col-xs-6">
-                                <h3>HTML, CSS, Javascript.</h3>
+                                <h3>{lang}</h3>
                             </div>
                         </div>
                         <div className="row text-center">
@@ -28,7 +41,7 @@ class MySkills extends React.Component {
                                 <h2>Frameworks</h2>
                             </div>
                             <div className="col-xs-6">
-                                <h3>JQuery, AngularJS, ReactJS, NodeJS.</h3>
+                                <h3>AngularJS, ReactJS, NodeJS.</h3>
                             </div>
                         </div>
                         <div className="row text-center">
