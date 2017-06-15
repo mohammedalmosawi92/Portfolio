@@ -5,9 +5,10 @@ var cvSchema = new Schema({
     name: String,
     job: String,
     bio: String,
-    languages: [String],
-    frameworks: [String],
-    databases: [String]
+    languages: String,
+    frameworks: String,
+    databases: String,
+    image: String
 })
 
 module.exports = mongoose.model("CVSchema", cvSchema);

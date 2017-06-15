@@ -1,22 +1,24 @@
 import React from "react";
 
 class MySkills extends React.Component {
+    componentDidMount() {
+        console.log(this.props.cv._id)
+    }
     render() {
-        let lang = [];
-        if(this.props.cv.languages !== undefined) {
-            lang = this.props.cv.languages.map((item, index) => {
-                if(index !== this.props.cv.languages.length - 1) {
-                    return (
-                        <span> {item},</span>
-                  )
-                }else {
-                    return (
-                        <span> {item}.</span>
-                    )
-                }
-            })
-        }
-  
+        let skills = Object.keys(this.props.cv).map((item, index) => {
+            if(item === "languages" || item === "databases" || item === "frameworks") {
+                return (
+                    <div className="row text-center" key={this.props.cv._id + index}>
+                        <div className="col-xs-6">
+                            <h2 className="skill-name">{item}</h2>
+                        </div>
+                        <div className="col-xs-6">
+                            <h3>{this.props.cv[item]}</h3>
+                        </div>
+                    </div>
+                )
+            }
+        })
         return (
             <div className="container">
                 <div className="row text-center">
@@ -28,30 +30,7 @@ class MySkills extends React.Component {
                 </div>
                 <div className="row text-center">
                     <div className="col-md-8 col-md-offset-2">
-                        <div className="row">
-                            <div className="col-xs-6">
-                                <h2>Languages</h2>
-                            </div>
-                            <div className="col-xs-6">
-                                <h3>{lang}</h3>
-                            </div>
-                        </div>
-                        <div className="row text-center">
-                            <div className="col-xs-6">
-                                <h2>Frameworks</h2>
-                            </div>
-                            <div className="col-xs-6">
-                                <h3>AngularJS, ReactJS, NodeJS.</h3>
-                            </div>
-                        </div>
-                        <div className="row text-center">
-                            <div className="col-xs-6">
-                                <h2>Database</h2>
-                            </div>
-                            <div className="col-xs-6">
-                                <h3>MongoDB.</h3>
-                            </div>
-                        </div>
+                        {skills}
                     </div>
                 </div>
             </div>

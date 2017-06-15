@@ -7,7 +7,7 @@ class Myphoto extends React.Component {
                 <div className="row text-center">
                     <div className="col-md-12">
                         <div className="myphoto">
-                            <img src={this.props.photo} className="img-responsive" />
+                            <img src={this.props.cv.image} className="img-responsive" />
                         </div>
                     </div>
                 </div>

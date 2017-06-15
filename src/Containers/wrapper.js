@@ -1,25 +1,14 @@
 import React from "react";
 
-//import containers
-import Background from "./Background";
-import Bio from "../Component/bio";
-import Skills from "../Component/skills";
-import Separator from "./separator";
-import Footer from "../Component/footer";
-
 class Wrapper extends React.Component {
     componentWillMount() {
         this.props.getCV();
     }
     render() {
+        let children = React.cloneElement(this.props.children, this.props);
         return (
             <div>
-                <Background className="background-comp" {...this.props}></Background>
-                <Bio className="bio-comp" {...this.props}></Bio>
-                <Separator></Separator>
-                <Skills {...this.props}></Skills>
-                <Separator></Separator>
-                <Footer {...this.props}></Footer>
+                {children}
             </div>
         )
     }

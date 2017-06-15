@@ -7,12 +7,12 @@ class Owner extends React.Component {
                <div className="container">
                    <div className="row text-center">
                        <div className="col-md-12">
-                           <h1>Hi, Im Mohammed</h1>
+                           <h1>{this.props.cv.name}</h1>
                        </div>
                    </div>
                    <div className="row text-center">
                        <div className="col-md-12">
-                           <h3>Front-end developer</h3>
+                            <h3>{this.props.cv.job}</h3>
                        </div>
                    </div>
                </div>

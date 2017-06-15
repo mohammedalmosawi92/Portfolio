@@ -2,14 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 //import component 
-import AppConnector from "./Containers/main.js";
+import Root from "./Routing/router.js";
 import store from "./store.js";
 
 class App extends React.Component {
     render() {
         return (
             <div>
-                <AppConnector store={store} />
+                <Root store={store} />
             </div>
         )
     }

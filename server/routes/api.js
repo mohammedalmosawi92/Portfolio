@@ -41,22 +41,32 @@ apiRouter.delete("/:id", function(req, res) {
     })
 })
 
-apiRouter.put("/:id", function(req, res) {
+apiRouter.put("/:id/:prop", function(req, res) {
     var id = req.params.id;
-    CvSchema.findById(id, function(err, data){
+    CvSchema.findById(id, function(err, data) {
         if(err) {
             res.status(500).send({err: err});
         }else {
-            for(key in req.query) {
-                data[key] = req.query[key];
-            }
+            var prop = req.params.prop;
+            data[prop] = undefined;
             data.save(function(err, result) {
                 if(err) {
                     res.status(500).send({err: err});
                 }else {
-                    res.status(200).send({message: "You have updated the record", data: result})
+                    res.status(200).send({msg: "You have deleted a property", data: result})
                 }
             })
+        }
+    })
+})
+
+apiRouter.put("/:id", function(req, res) {
+    var id = req.params.id;
+    CvSchema.findByIdAndUpdate(id, req.body,function(err, data){
+        if(err) {
+            res.status(500).send({err: err});
+        }else {
+            res.status(200).send({msg: "You have updated an item", data: data})
         }
     })
 })

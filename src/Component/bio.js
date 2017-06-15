@@ -2,7 +2,6 @@ import React from "react";
 
 class Description extends React.Component {
     render() {
-        
         return (
             <div className="desc container">
                 <div className="row">
@@ -14,7 +13,7 @@ class Description extends React.Component {
                     <div className="col-md-8 col-md-offset-2">
                         <div className="aboutMy">
                             <div className="first-paragraph">
-                            {this.props.cv.bio}
+                                {this.props.cv.bio}
                             </div>
                         </div>
                     </div>
